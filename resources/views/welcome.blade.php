@@ -6,7 +6,9 @@
 
 
         <small>
+        <a href="{{url('login')}}">
             <img src="{{asset("assets/img/logotext.png")}}" class="img-responseive" alt=""/>
+           </a>
         </small>
 
         <br>
