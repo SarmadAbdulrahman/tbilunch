@@ -8,6 +8,7 @@ use App\Branch;
 use App\service;
 use App\Post;
 use App\appointment;
+use PDF;
 
 
 class ClinetController extends Controller
@@ -44,7 +45,7 @@ class ClinetController extends Controller
     
     
     
-                    Post::create([
+                   $p= Post::create([
                         'branches_id'  =>$request['Bracnhes']
                       , 'serviceType_id'=>$request['services']
                       , 'username'=>$request['your_name']
@@ -55,7 +56,14 @@ class ClinetController extends Controller
                   ]);
 
 
-                  session()->flash('message', 'تم الحجز بنجاح');
+                  $Message=" لقد تم الحجز بنجاح ، رقم الحجز". $p->id;
+
+                  session()->flash('message',  $Message);
+
+
+                 
+
+                  
 
                   return  back();
 
@@ -67,7 +75,7 @@ class ClinetController extends Controller
 
 
 
-                session()->flash('message', 'نعتذد، لايوجد حجز في هذا اليوم');
+                session()->flash('message', 'نعتذر لايوجد حجز في هذا اليوم');
 
                 return  back();
               
