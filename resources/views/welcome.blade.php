@@ -5,11 +5,15 @@
     <div class="login-container animated fadeInDown">
 
 
+          
+
         <small>
         <a href="{{url('login')}}">
             <img src="{{asset("assets/img/logotext.png")}}" class="img-responseive" alt=""/>
            </a>
         </small>
+
+            <a href="{{url('kyc')}}" class="btn btn-lg btn-success">فتح حساب</a>
 
         <br>
         <br>
@@ -80,7 +84,12 @@
                 </div>
 
             </form>
+
+       
         </div>
+
+
+           
 
     </div>
     <!-- /Page Content -->

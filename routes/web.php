@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/PostRequest','ClinetController@PostRequest')->name('PostRequest');
 Route::get('/','ClinetController@CreateView');
-
+Route::get('/kyc','ClinetController@kyc');
 
 
 

@@ -59,9 +59,9 @@
     <script type="text/javascript" src="{{asset("assets/js/jqwidgets/jqwidgets/jqxgrid.edit.js")}}"></script> 
     <script type="text/javascript" src="{{asset("assets/js/jqwidgets/jqwidgets/jqxgrid.filter.js")}}"></script> 
     <script type="text/javascript" src="{{asset("assets/js/jqwidgets/jqwidgets/jqxdata.js")}}"></script> 
-
     <script type="text/javascript" src="{{asset("assets/js/jqwidgets/jqwidgets/jqxdata.export.js")}}"></script>
     <script type="text/javascript" src="{{asset("assets/js/jqwidgets/jqwidgets/jqxgrid.export.js")}}"></script>
+    <script type="text/javascript" src="{{asset("assets/js/fuelux/wizard/wizard-custom.js")}}"></script>
 @yield('js')
 @endsection
 

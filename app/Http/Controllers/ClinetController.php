@@ -157,4 +157,14 @@ class ClinetController extends Controller
 
         return view('welcome',$InfromationArray);
     }
+
+
+
+        public function kyc()
+        
+        {
+
+
+        return view('kyc');
+        }
 }

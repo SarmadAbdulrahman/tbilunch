@@ -39,12 +39,12 @@
                                     <img src="{{asset("assets/img/avatars/adam-jansen.jpg")}}">
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span>{{auth()->user()->name}}</span></span></h2>
+                                    <h2><span class="profile"><span></span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
-                                <li class="username"><a>{{auth()->user()->name}}</a></li>
+                                <li class="username"><a></a></li>
                                 <!--Avatar Area-->
 
                                 <li class="dropdown-footer">
