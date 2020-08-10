@@ -183,6 +183,14 @@
                             </a>
                         </li>
 
+
+
+                          <li>
+                            <a href="{{url('Branch/ShowKyc')}}">
+                                <span class="menu-text">Show KYC</span>
+                            </a>
+                        </li>
+
                     </ul>
                 </li>
 

@@ -64,5 +64,11 @@ class kyc extends Model
         , 'Residential_Address'
         , 'Nearest_Land_Mark'
         , 'Residence_Type_id'
+        , 'id_path'
+        , 'NationalityID'
+        , 'Certificate_ofNationality'
+        , 'Passport'
+        , 'Residence_Card'
+        , 'NationalityIDCardWife'
  ];
 }

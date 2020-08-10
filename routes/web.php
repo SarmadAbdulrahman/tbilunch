@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::post('/PostRequest','ClinetController@PostRequest')->name('PostRequest');
 Route::get('/','ClinetController@CreateView');
 Route::get('/kyc','ClinetController@kyc');
+Route::post('/pkyc','ClinetController@pkyc');
 
 
 
@@ -111,7 +112,7 @@ Route::group(['prefix'=>'ClientAgent','middleware' => ['role:ClientAgent']], fun
 
 
 Route::group(['prefix'=>'Branch','middleware' => ['role:Branch']], function () {
-  // Createappointment  StoreAppointment  Showappointment  ChangePassword  StorePassword
+  // Createappointment  StoreAppointment  Showappointment  ChangePassword  StorePassword  ShowKyc
 
 
     Route::get('/','Branch\BranchController@index');
@@ -123,6 +124,8 @@ Route::group(['prefix'=>'Branch','middleware' => ['role:Branch']], function () {
 
 
     Route::post('/StorePassword','Branch\BranchController@StorePassword');
+    Route::get('/ShowKyc','Branch\BranchController@ShowKyc');
+    Route::get('/ShowKycdetails','Branch\BranchController@ShowKycdetails');
 });
 
 

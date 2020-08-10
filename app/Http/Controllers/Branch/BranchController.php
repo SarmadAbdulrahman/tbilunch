@@ -12,6 +12,7 @@ use Validator;
 use App\Post;
 use App\User;
 use Illuminate\Support\Facades\Hash;
+use App\kyc;
 
 
 
@@ -179,4 +180,64 @@ class BranchController extends Controller
         return response()->json(['status'=>'success'],200);
 
     }
+
+
+
+    public  function ShowKyc(Request $request)
+    {
+       
+
+        $posts=kyc::all();
+
+
+       
+        
+
+        $InformationArray=Array(
+          'Posts'=>$posts
+        );
+
+
+        return view('Branch.ShowKyc',$InformationArray);
+
+    }
+
+
+
+    // ShowKycdetails
+
+
+
+
+    public  function ShowKycdetails(Request $request)
+    {
+       
+
+
+      //  dd($request);
+      
+// kycDetails.blade
+
+
+$posts=kyc::find($request->id);
+
+
+       
+        
+
+        $InformationArray=Array(
+          'Posts'=>$posts
+        );
+
+  
+
+
+
+
+        return view('Branch.kycDetails', $InformationArray);
+
+    }
+
+
+
 }
